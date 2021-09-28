@@ -153,251 +153,157 @@ Special thanks to the people who helped testing this project out.**
 #### **Map 1**
 - **Items & Weapons**
     - Tier 1 gun spawns added to the start. 
-
-        ![Image](https://i.imgur.com/twgOXFW.jpg) 
-        
+        [Image](https://i.imgur.com/twgOXFW.jpg) 
     - Medical cabinet added in the security office after the elevator event.
-        
-        ![Image](https://i.imgur.com/Iw6WHi5.jpg)
-        
+        [Image](https://i.imgur.com/Iw6WHi5.jpg) 
 - **Ammo Piles**
     - Map room by the start. 
-        
-        ![Image](https://i.imgur.com/XrrSTqd.jpg)
-        
+        [Image](https://i.imgur.com/XrrSTqd.jpg)
     - Elevator room. 
-        
-        ![Image](https://i.imgur.com/FBFcU8q.jpg)
-        
+        [Image](https://i.imgur.com/FBFcU8q.jpg)
 - **Props**
     - Collision added to the railings in the elevator. Allows survivors to avoid spit damage. 
-        
-        ![Image](https://i.imgur.com/gb46YHv.jpg)
-        
-
+        [Image](https://i.imgur.com/gb46YHv.jpg)
+		
 #### **Map 2**
 - **Items & Weapons**
     - Medical cabinet added in the grocery store by the cola.
-        
-        ![Image](https://i.imgur.com/rNnolxP.jpg)
-        
+        [Image](https://i.imgur.com/rNnolxP.jpg)
 
 #### **Map 3**
 - **Director & Events**
     - Event pathing has been changed. Both pathways are open (the toystore, and lower hallway) but in order to progress through the map survivors will need to go to the lower hallway. The toystore room provides a spot to fight tanks, and extra pills if needed. 
-        
-        ![Image](https://i.imgur.com/LWEZRiy.jpg) ![Image](https://i.imgur.com/rA3zZmJ.jpg) ![Image](https://i.imgur.com/ahMuZ9M.jpg)
-        
+        [Image](https://i.imgur.com/LWEZRiy.jpg) [Image](https://i.imgur.com/rA3zZmJ.jpg) [Image](https://i.imgur.com/ahMuZ9M.jpg)
     - Event pathing has been changed. Escalators will now spawn on the right side of the room during the gauntlet event. 
-        
-        ![Image](https://i.imgur.com/0u1dudx.jpg)
-        
+        [Image](https://i.imgur.com/0u1dudx.jpg) 
 - **Props**
     - Added a barrier to prevent survivors going all the way down the hallway leading to the toystore room. 
-        
-        ![Image](https://i.imgur.com/uGE6TRI.jpg)
-        
+        [Image](https://i.imgur.com/uGE6TRI.jpg) 
     - Infected are now able to break the bathroom wall and use this as a path to get to the survivors instead of using the ventilation shaft. 
-        
-        ![Image](https://i.imgur.com/6vDnbbh.jpg) ![Image](https://i.imgur.com/OsyJl2A.jpg)
-        
+        [Image](https://i.imgur.com/6vDnbbh.jpg) [Image](https://i.imgur.com/OsyJl2A.jpg)
     - Added a scaffold to nerf the death pull on the escalator to try and encourage more variety in where infected choose to attack. Survivors can still take fall damage but won't die if pulled off. 
-        
-        ![Image](https://i.imgur.com/1Uyl6n8.jpg)
-        
+        [Image](https://i.imgur.com/1Uyl6n8.jpg)
     - Added barriers to the top floor to prevent survivors from back pedaling the whole time during tank fights. 
-        
-        ![Image](https://i.imgur.com/bdjy358.jpg) ![Image](https://i.imgur.com/gEpjJNt.jpg)
-        
+        [Image](https://i.imgur.com/bdjy358.jpg) [Image](https://i.imgur.com/gEpjJNt.jpg)
 - **Ammo Piles**
     - Lobby room.
-        
-        ![Image](https://i.imgur.com/zytwfHS.jpg)
-        
+        [Image](https://i.imgur.com/zytwfHS.jpg) 
     - Lower hallway.
-        
-        ![Image](https://i.imgur.com/TdpfpkI.jpg)
-        
+        [Image](https://i.imgur.com/TdpfpkI.jpg)
     - Outside security office.
-        
-        ![Image](https://i.imgur.com/hzYlqhW.jpg)
-        
+        [Image](https://i.imgur.com/hzYlqhW.jpg)
 
 #### **Map 4**
 - **Props**
     - Added railing prop in the elevator and gave it collision. Allows survivors to avoid spit damage. 
-        
-        ![Image](https://i.imgur.com/g4CAAsp.jpg)
+        [Image](https://i.imgur.com/g4CAAsp.jpg)
         
 ---
 ### Dark Carnival
 #### **Map 1**
 - **Items & Weapons**
     - Added pills in the new ambulance on the highway. 
-        
-        ![Image](https://i.imgur.com/IjMPQUk.jpg)
-        
+        [Image](https://i.imgur.com/IjMPQUk.jpg)
 - **Props**
     - Added ambulance on the highway after the motel.
-        
-        ![Image](https://i.imgur.com/IjMPQUk.jpg)
-        
+        [Image](https://i.imgur.com/IjMPQUk.jpg)
 - **Ammo Piles**
     - Humvee near underpass.
-        
-        ![Image](https://i.imgur.com/sybxOBP.jpg)
-        
+        [Image](https://i.imgur.com/sybxOBP.jpg)
     - Motel room at the end of the motel area.
-        
-        ![Image](https://i.imgur.com/B83EJzg.jpg)
-        
+        [Image](https://i.imgur.com/B83EJzg.jpg)
     - Outhouse by the hill.
-        
-        ![Image](https://i.imgur.com/34k1PT3.jpg)
-        
+        [Image](https://i.imgur.com/34k1PT3.jpg)
 
 #### **Map 2**
 - **Ammo Piles**
     - Tent by the ramp before kiddyland.
-        
-        ![Image](https://i.imgur.com/pCAeZlj.jpg)
-        
+        [Image](https://i.imgur.com/pCAeZlj.jpg)
     - Under balcony by the event.
-        
-        ![Image](https://i.imgur.com/XGeTIZD.jpg)
-        
+        [Image](https://i.imgur.com/XGeTIZD.jpg)
 
 #### **Map 3**
 - **Ammo Piles**
     - Second painting in the tunnel of love.
-        
-        ![Image](https://i.imgur.com/EAXubSu.jpg)
-        
+        [Image](https://i.imgur.com/EAXubSu.jpg)
     - Office with pill cabinet.
-        
-        ![Image](https://i.imgur.com/RSZsFVh.jpg)
-        
+        [Image](https://i.imgur.com/RSZsFVh.jpg)
 
 #### **Map 4**
 - **Items & Weapons**
     - Medical cabinet added in the booth before the barn. 
-        
-        ![Image](https://i.imgur.com/kAG6Atv.jpg)
-        
+        [Image](https://i.imgur.com/kAG6Atv.jpg)
 - **Ammo Piles**
     - Picnic tables outside the barn.
-        
-        ![Image](https://i.imgur.com/JDNvsmi.jpg)
-        
+        [Image](https://i.imgur.com/JDNvsmi.jpg)
 
 #### **Map 5**
 - **Director & Events**
     - Rescue helicopter is now forced to land on the left side of the concert area. 
-        
-        ![Image](https://i.imgur.com/81iDXvv.jpg)
-        
+        [Image](https://i.imgur.com/81iDXvv.jpg)
 - **Props**
     - Fence added onto both the right and left bathrooms at the top of the seating area to allow infected to spawn a bit easier. 
-        
-        ![Image](https://i.imgur.com/DkpyssP.jpg) ![Image](https://i.imgur.com/HVCayXp.jpg)
+        [Image](https://i.imgur.com/DkpyssP.jpg) [Image](https://i.imgur.com/HVCayXp.jpg)
         
 ---
 ### Swamp Fever
 #### **Map 1**
 - **Weapons & Items**
     - Medical cabinet added into the standard holdout house by the ferry event.
-        
-        ![Image](https://i.imgur.com/wUAAp4Q.jpg)
-        
+        [Image](https://i.imgur.com/wUAAp4Q.jpg)
     - Changed the guaranteed sniper spawn to a hunting rifle and moved it to outside one of the shanty houses.
-        
-        ![Image](https://i.imgur.com/l5hNeW2.jpg)
-        ![Image](https://i.imgur.com/dgc17nz.jpg)
-        
+        [Image](https://i.imgur.com/l5hNeW2.jpg)
+        [Image](https://i.imgur.com/dgc17nz.jpg)
 - **Props**
     - Added SUV on the road outside the start saferoom.
-        
-        ![Image](https://i.imgur.com/EHCPjZN.jpg)
-        
+        [Image](https://i.imgur.com/EHCPjZN.jpg)
     - Added rocks outside the start saferoom.
-        
-        ![Image](https://i.imgur.com/Z45rs1V.jpg)
-        
+        [Image](https://i.imgur.com/Z45rs1V.jpg)
 - **QOL Changes**
     - Fixed the ladder on the house by the ferry event being hard to climb.
-        
-        ![Image](https://i.imgur.com/PaU9rZZ.jpg)
-        
+        [Image](https://i.imgur.com/PaU9rZZ.jpg)
 - **Visual Effects**
     - Added a semi-dense fog to the map to obscure the survivors vision a bit.
-        
-        ![Image](https://i.imgur.com/h8ZCqn4.jpg)
-        
+        [Image](https://i.imgur.com/h8ZCqn4.jpg)
 - **Ammo Piles**
     - Outside the two story house before the small town.
-        
-        ![Image](https://i.imgur.com/C2tUodF.jpg)
-        
+        [Image](https://i.imgur.com/C2tUodF.jpg)
     - By the picnic tables after the ferry event.
-        
-        ![Image](https://i.imgur.com/Q0PeOfa.jpg)
-        
+        [Image](https://i.imgur.com/Q0PeOfa.jpg)
     - Ontop the table on the wooden walkway.
-        
-        ![Image](https://i.imgur.com/QWVcUVy.jpg)
-        
+        [Image](https://i.imgur.com/QWVcUVy.jpg)
 
 #### **Map 2**
 - **Weapons & Items**
     - Changed the Tier 2 weapons at the start to be random Tier 1 weapons.
-        
-        ![Image](https://i.imgur.com/dOkwEpq.jpg)
-        
+        [Image](https://i.imgur.com/dOkwEpq.jpg)
     - Medical cabinet added into the shack after the plane event.
-        
-        ![Image](https://i.imgur.com/OBHnEis.jpg)
-        
+        [Image](https://i.imgur.com/OBHnEis.jpg)
 - **Props**
     - Added extra bushes by the campfire after the plane event.
-        
-        ![Image](https://i.imgur.com/EzImV3v.jpg)
-        ![Image](https://i.imgur.com/nSeVMMg.jpg)
-        
+        [Image](https://i.imgur.com/EzImV3v.jpg)
+        [Image](https://i.imgur.com/nSeVMMg.jpg)
 - **Visual Effects**
     - Added a dense fog to the map to obscure the survivors vision.
-        
-        ![Image](https://i.imgur.com/MqS9Xgo.jpg)
-        
+        [Image](https://i.imgur.com/MqS9Xgo.jpg)
 - **Ammo Piles**
     - By the campfire after the plane event
-        
-        ![Image](https://i.imgur.com/uLIX9W3.jpg)
-        
+        [Image](https://i.imgur.com/uLIX9W3.jpg)
 
 #### **Map 3**
 - **Weapons & Items**
     - Added a medical cabinet in the shack leading to the swamp area
-        
-        ![Image](https://i.imgur.com/OSJ4bok.jpg)
-        
+        [Image](https://i.imgur.com/OSJ4bok.jpg)
 - **Props**
     - Added several "hunting platforms" in some of the trees in the swamp area.
-        
-        ![Image](https://i.imgur.com/3XoYJh5.jpg)
-        ![Image](https://i.imgur.com/dP8Ex6T.jpg)
-        ![Image](https://i.imgur.com/NTqg1Cw.jpg)
-        
+        [Image](https://i.imgur.com/3XoYJh5.jpg)
+        [Image](https://i.imgur.com/dP8Ex6T.jpg)
+        [Image](https://i.imgur.com/NTqg1Cw.jpg)
 - **Visual Effects**
     - Added a dense fog to the map to obscure the survivors vision.
-        
-        ![Image](https://i.imgur.com/W8J3JmZ.jpg)
-        
+        [Image](https://i.imgur.com/W8J3JmZ.jpg)
 - **Ammo Piles**
     - Inside the shanty house at the start of the walkway.
-        
-        ![Image](https://i.imgur.com/uBZeZNX.jpg)
-        
+        [Image](https://i.imgur.com/uBZeZNX.jpg)
     - By the lantern before the event.
-        
-        ![Image](https://i.imgur.com/zhkK20r.jpg)
-        
+        [Image](https://i.imgur.com/zhkK20r.jpg)
