@@ -128,8 +128,6 @@ Special thanks to the people who helped testing this project out.**
 ---
 ### **Pump Shotguns**
 - **Pump Shotgun**
-    - Pellets increased to 16 (Vanilla: 10)
-    - Damage decreased to 17 (Vanilla 25)
     - Max range decreased to 2500 (Vanilla: 3000)
     - Dropoff damage range changed to 800 (Vanilla: None)
 - **Chrome Shotgun**
@@ -172,19 +170,19 @@ Special thanks to the people who helped testing this project out.**
 
 #### **Map 3**
 - **Director & Events**
-    - Event pathing has been changed. Both pathways are open (the toystore, and lower hallway) but in order to progress through the map survivors will need to go to the lower hallway. The toystore room provides a spot to fight tanks, and extra pills if needed. 
-        [Image](https://i.imgur.com/LWEZRiy.jpg) [Image](https://i.imgur.com/rA3zZmJ.jpg) [Image](https://i.imgur.com/ahMuZ9M.jpg)
-    - Event pathing has been changed. Escalators will now spawn on the right side of the room during the gauntlet event. 
+    - **Overhaul** Event pathing has been changed. Both pathways are open (the toystore, and lower hallway) but in order to progress through the map survivors will need to go to the lower hallway. The toystore room provides a spot to fight tanks, and extra pills if needed. 
+        [Images](https://imgur.com/a/kqPAzew)
+    - **Overhaul** Event pathing has been changed. Escalators will now spawn on the right side of the room during the gauntlet event. 
         [Image](https://i.imgur.com/0u1dudx.jpg) 
 - **Props**
     - Added a barrier to prevent survivors going all the way down the hallway leading to the toystore room. 
         [Image](https://i.imgur.com/uGE6TRI.jpg) 
     - Infected are now able to break the bathroom wall and use this as a path to get to the survivors instead of using the ventilation shaft. 
-        [Image](https://i.imgur.com/6vDnbbh.jpg) [Image](https://i.imgur.com/OsyJl2A.jpg)
+        [Images](https://imgur.com/a/qjzbZJw)
     - Added a scaffold to nerf the death pull on the escalator to try and encourage more variety in where infected choose to attack. Survivors can still take fall damage but won't die if pulled off. 
         [Image](https://i.imgur.com/1Uyl6n8.jpg)
     - Added barriers to the top floor to prevent survivors from back pedaling the whole time during tank fights. 
-        [Image](https://i.imgur.com/bdjy358.jpg) [Image](https://i.imgur.com/gEpjJNt.jpg)
+        [Images](https://imgur.com/a/P4iSSZq)
 - **Ammo Piles**
     - Lobby room.
         [Image](https://i.imgur.com/zytwfHS.jpg) 
@@ -216,6 +214,13 @@ Special thanks to the people who helped testing this project out.**
         [Image](https://i.imgur.com/34k1PT3.jpg)
 
 #### **Map 2**
+- **Props**
+	- **Overhaul** Added more fencing at the bottom of the slide to limit how far survivors can back pedal.
+		[Image](https://i.imgur.com/rA6p54j.jpg)
+	- **Overhaul** Changed pathing after the slide. Survivors no longer go up the stairs to the next medical cabinet, and instead go underneath the room and climb over a food truck.
+		[Image](https://i.imgur.com/nMNJEwC.jpg)
+	- **Overhaul** Added a ladder to get back up to the balcony area after the new one way drop. Added a new room for survivors to go into.
+		[Image](https://imgur.com/a/d9S0AEE)
 - **Ammo Piles**
     - Tent by the ramp before kiddyland.
         [Image](https://i.imgur.com/pCAeZlj.jpg)
@@ -243,7 +248,7 @@ Special thanks to the people who helped testing this project out.**
         [Image](https://i.imgur.com/81iDXvv.jpg)
 - **Props**
     - Fence added onto both the right and left bathrooms at the top of the seating area to allow infected to spawn a bit easier. 
-        [Image](https://i.imgur.com/DkpyssP.jpg) [Image](https://i.imgur.com/HVCayXp.jpg)
+        [Images](https://imgur.com/a/Sd1fJyH)
         
 ---
 ### Swamp Fever
@@ -252,8 +257,7 @@ Special thanks to the people who helped testing this project out.**
     - Medical cabinet added into the standard holdout house by the ferry event.
         [Image](https://i.imgur.com/wUAAp4Q.jpg)
     - Changed the guaranteed sniper spawn to a hunting rifle and moved it to outside one of the shanty houses.
-        [Image](https://i.imgur.com/l5hNeW2.jpg)
-        [Image](https://i.imgur.com/dgc17nz.jpg)
+        [Images](https://imgur.com/a/FgQl5cJ)
 - **Props**
     - Added SUV on the road outside the start saferoom.
         [Image](https://i.imgur.com/EHCPjZN.jpg)
@@ -281,8 +285,7 @@ Special thanks to the people who helped testing this project out.**
         [Image](https://i.imgur.com/OBHnEis.jpg)
 - **Props**
     - Added extra bushes by the campfire after the plane event.
-        [Image](https://i.imgur.com/EzImV3v.jpg)
-        [Image](https://i.imgur.com/nSeVMMg.jpg)
+        [Images](https://imgur.com/a/JQYdoWo)
 - **Visual Effects**
     - Added a dense fog to the map to obscure the survivors vision.
         [Image](https://i.imgur.com/MqS9Xgo.jpg)
@@ -296,14 +299,38 @@ Special thanks to the people who helped testing this project out.**
         [Image](https://i.imgur.com/OSJ4bok.jpg)
 - **Props**
     - Added several "hunting platforms" in some of the trees in the swamp area.
-        [Image](https://i.imgur.com/3XoYJh5.jpg)
-        [Image](https://i.imgur.com/dP8Ex6T.jpg)
-        [Image](https://i.imgur.com/NTqg1Cw.jpg)
+        [Images](https://imgur.com/a/bfBs70s)
 - **Visual Effects**
-    - Added a dense fog to the map to obscure the survivors vision.
+    - Modified fog to be much denser to obscure the survivors vision.
         [Image](https://i.imgur.com/W8J3JmZ.jpg)
 - **Ammo Piles**
     - Inside the shanty house at the start of the walkway.
         [Image](https://i.imgur.com/uBZeZNX.jpg)
     - By the lantern before the event.
         [Image](https://i.imgur.com/zhkK20r.jpg)
+
+#### **Map 4**
+- **Visual Effects**
+    - Modified fog to be slightly more dense.
+
+---
+### Hard Rain
+#### **Map 1**
+- **Director & Events**
+	- Forced the following alarm cars to be active: Burger Tank, Playground, Garage sale, and End saferoom.
+		[Images](https://imgur.com/a/pwiEJ23)
+
+- **Weapons & Items**
+    - Removed/replaced all Tier 2 weapon spawns on the map.
+    - Removed medical cabinet at the start.
+	- Added guaranteed shovel spawn in the new construction area.
+		[Image](https://i.imgur.com/XCinSsH.jpg)
+
+- **Props**
+	- Removed hittable car by the green house.
+	- Added hittable dumpster by the new construction site.
+		[Image](https://i.imgur.com/2c2MLGv.jpg)
+	- **Overhaul** Added a new construction site area beside the half built house. Provides a new spot for survivors to fight tanks.
+		[Image](https://i.imgur.com/dQQrsXI.jpg)
+	- **Overhaul** Added more stuff under the green house where survivors typically fight tanks.
+		[Image](https://i.imgur.com/8nkS1Az.jpg)
