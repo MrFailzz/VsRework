@@ -8,8 +8,8 @@
 #include <sdktools_sound>
 #include <colors>
 #undef REQUIRE_PLUGIN
-#include <l4d_tank_control_eq>
-#define REQUIRE_PLUGIN
+// #include <l4d_tank_control_eq>
+// #define REQUIRE_PLUGIN
 
 #define PLUGIN_VERSION "1.4"
 #define DANG "ui/pickup_secret01.wav"
@@ -32,7 +32,7 @@ public void L4D_OnSpawnTank_Post(int client, const float vecPos[3], const float 
 {
 	int tankClient = client;
 	char nameBuf[MAX_NAME_LENGTH];
-	EmitSoundToAll(DANG);					  
+	EmitSoundToAll(DANG);
 	
 	if (IsTankSelection())
 	{
@@ -59,9 +59,6 @@ public void L4D_OnSpawnTank_Post(int client, const float vecPos[3], const float 
 		HookEvent("player_spawn", Event_PlayerSpawn);
 		return;
 	}
-	
-//	CPrintToChatAll("{red}[{default}!{red}] {olive}Tank {default}({red}Control: %s{default}) has spawned!", nameBuf);
-//	EmitSoundToAll(DANG);
 }
 
 public void Event_PlayerSpawn(Event event, char[] name, bool dontBroadcast)
@@ -71,8 +68,6 @@ public void Event_PlayerSpawn(Event event, char[] name, bool dontBroadcast)
 	// Tanky Client?
 	if (IsTank(client) && !IsFakeClient(client))
 	{
-//		CPrintToChatAll("{red}[{default}!{red}] {olive}Tank {default}({red}Control: %N{default}) has spawned!", client);
-//		EmitSoundToAll(DANG);
 		UnhookEvent("player_spawn", Event_PlayerSpawn);
 	}
 }

@@ -486,6 +486,10 @@ float GetActualValue(ConVar cvar)
 
 void ApplySlowdown(int client, float value, float maxValue)
 {
+	if (client == 0) {
+		return;
+	}
+	
 	if (value == -1.0) {
 		return;
 	}
@@ -499,7 +503,7 @@ void ApplySlowdown(int client, float value, float maxValue)
 	}
 
 	value = 1 - value;
-	
+
 	SetEntPropFloat(client, Prop_Send, "m_flVelocityModifier", value);
 
 	#if DEBUG

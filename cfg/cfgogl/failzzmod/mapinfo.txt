@@ -7,7 +7,7 @@
 			"Early spawns"
 			{
 				"min"		"0"
-				"max"		"79"
+				"max"		"74"
 			}
 		}
 	}
@@ -288,9 +288,9 @@
 			"Early spawns"
 			{
 				"min"		"0"
-				"max"		"30"
+				"max"		"45"
 			}
-		}		
+		}
 	}
 	"c8m2_subway"
 	{
@@ -494,13 +494,5 @@
 	}
 	"c14m2_lighthouse"
 	{
-		"tank_ban_flow"
-		{
-			"Early spawns"
-			{
-				"min"		"0"
-				"max"		"30"
-			}
-		}
 	}
 }
