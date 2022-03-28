@@ -5,8 +5,7 @@ DirectorOptions <-
 	// This turns off tanks and witches.
 	ProhibitBosses = true
 
-	PreferredMobDirection = SPAWN_LARGE_VOLUME
-	PreferredSpecialDirection = SPAWN_LARGE_VOLUME
+	PreferredMobDirection = SPAWN_IN_FRONT_OF_SURVIVORS
 	MobSpawnMinTime = 1
 	MobSpawnMaxTime = 2
 	MobMaxPending = 30
