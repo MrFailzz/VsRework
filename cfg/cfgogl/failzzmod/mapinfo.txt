@@ -491,14 +491,6 @@
 	}
 	"c14m1_junkyard"
 	{
-		"tank_ban_flow"
-		{
-			"Early tanks"
-			{
-				"min"		"0"
-				"max"		"30"
-			}
-		}
 	}
 	"c14m2_lighthouse"
 	{
