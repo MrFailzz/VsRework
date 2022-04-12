@@ -10,9 +10,7 @@ Msg("Initiating c4m3_minifinale\n");
 DirectorOptions <-
 {
 	A_CustomFinale1 = PANIC
-	A_CustomFinaleValue1 = 2
+	A_CustomFinaleValue1 = 1
 
-	MobMinSize = 15
-	MobMaxSize = 15
 	PreferredMobDirection = SPAWN_BEHIND_SURVIVORS
 }

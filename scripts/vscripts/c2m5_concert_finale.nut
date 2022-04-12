@@ -1,12 +1,10 @@
-Msg("Initiating c2m5_concert_finale rework script\n");
+Msg("Initiating c2m5_concert_finale script\n");
 
 //-----------------------------------------------------------------------------
-
 PANIC <- 0
 TANK <- 1
 DELAY <- 2
 ONSLAUGHT <- 3
-
 //-----------------------------------------------------------------------------
 
 SharedOptions <-
@@ -21,9 +19,7 @@ SharedOptions <-
 	A_CustomFinale4 = DELAY
 	A_CustomFinaleValue4 = 0
  	A_CustomFinale5 = PANIC
-	A_CustomFinaleValue5 = 1
- 	A_CustomFinale5 = PANIC
-	A_CustomFinaleValue5 = 1
+	A_CustomFinaleValue5 = 2
 	A_CustomFinale6 = DELAY
 	A_CustomFinaleValue6 = 15
 	A_CustomFinale7 = TANK

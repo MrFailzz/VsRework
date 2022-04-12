@@ -288,7 +288,7 @@
 			"Early spawns"
 			{
 				"min"		"0"
-				"max"		"45"
+				"max"		"70"
 			}
 		}
 	}
