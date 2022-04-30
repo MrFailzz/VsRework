@@ -125,9 +125,9 @@ PanicOptions <-
 
 	MegaMobSize = 0 // randomized in OnBeginCustomFinaleStage
 	MegaMobMinSize = 20
-	MegaMobMaxSize = 40
+	MegaMobMaxSize = 30
 	
-	CommonLimit = 15
+	CommonLimit = 12
 	
 	SpecialRespawnInterval = 40
 }
@@ -142,7 +142,7 @@ TankOptions <-
 	MobMinSize = 3
 	MobMaxSize = 5
 
-	CommonLimit = 7
+	CommonLimit = 5
 	
 	SpecialRespawnInterval = 60
 }
