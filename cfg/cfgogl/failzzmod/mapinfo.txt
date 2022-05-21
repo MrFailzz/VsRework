@@ -7,7 +7,7 @@
 			"Early spawns"
 			{
 				"min"		"0"
-				"max"		"74"
+				"max"		"75"
 			}
 		}
 	}
@@ -46,6 +46,14 @@
 	}
 	"c2m1_highway"
 	{
+		"tank_ban_flow"
+		{
+			"Early tanks"
+			{
+				"min"		"0"
+				"max"		"45"
+			}
+		}
 		"witch_ban_flow"
 		{
 			"One way drop platforms"

@@ -139,8 +139,8 @@ TankOptions <-
 
 	MobSpawnMinTime = 10
 	MobSpawnMaxTime = 20
-	MobMinSize = 3
-	MobMaxSize = 5
+	MobMinSize = 2
+	MobMaxSize = 3
 
 	CommonLimit = 5
 	

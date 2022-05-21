@@ -1,32 +1,46 @@
-Msg("Initiating c2m5_concert_finale script\n");
+
 
 //-----------------------------------------------------------------------------
+
 PANIC <- 0
 TANK <- 1
 DELAY <- 2
 ONSLAUGHT <- 3
+
 //-----------------------------------------------------------------------------
 
 SharedOptions <-
 {
-	A_CustomFinale_StageCount = 8
-	A_CustomFinale1 = DELAY
-	A_CustomFinaleValue1 = 0
-	A_CustomFinale2 = DELAY
-	A_CustomFinaleValue2 = 0
+	A_CustomFinale_StageCount = 9
+	
+ 	A_CustomFinale1 = PANIC
+	A_CustomFinaleValue1 = 1
+	
+ 	A_CustomFinale2 = PANIC
+	A_CustomFinaleValue2 = 1
+
 	A_CustomFinale3 = DELAY
-	A_CustomFinaleValue3 = 0
-	A_CustomFinale4 = DELAY
-	A_CustomFinaleValue4 = 0
- 	A_CustomFinale5 = PANIC
-	A_CustomFinaleValue5 = 2
-	A_CustomFinale6 = DELAY
-	A_CustomFinaleValue6 = 15
-	A_CustomFinale7 = TANK
-	A_CustomFinaleValue7 = 1
-	A_CustomFinaleMusic7 = ""
-	A_CustomFinale8 = DELAY
-	A_CustomFinaleValue8 = 15
+	A_CustomFinaleValue3 = 15
+
+	A_CustomFinale4 = TANK
+	A_CustomFinaleValue4 = 1
+	A_CustomFinaleMusic4 = ""
+
+	A_CustomFinale5 = DELAY
+	A_CustomFinaleValue5 = 15
+
+	A_CustomFinale6 = PANIC
+	A_CustomFinaleValue6 = 2
+
+	A_CustomFinale7 = DELAY
+	A_CustomFinaleValue7 = 10
+
+	A_CustomFinale8 = TANK
+	A_CustomFinaleValue8 = 1
+	A_CustomFinaleMusic8 = ""
+
+	A_CustomFinale9 = DELAY
+	A_CustomFinaleValue9 = 10
 	
 	PreferredMobDirection = SPAWN_LARGE_VOLUME
 	PreferredSpecialDirection = SPAWN_LARGE_VOLUME
@@ -35,7 +49,7 @@ SharedOptions <-
 	ZombieSpawnRange = 3000
 	
 	SpecialRespawnInterval = 20
-}
+} 
 
 InitialPanicOptions <-
 {
@@ -50,7 +64,16 @@ PanicOptions <-
 
 TankOptions <-
 {
+	ShouldAllowMobsWithTank = true
 	ShouldAllowSpecialsWithTank = true
+
+	MobSpawnMinTime = 10
+	MobSpawnMaxTime = 20
+	MobMinSize = 5
+	MobMaxSize = 7
+
+	CommonLimit = 12
+	
 	SpecialRespawnInterval = 30
 }
 

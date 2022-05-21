@@ -61,15 +61,15 @@ public void OnWeaponReload(Event hEvent, const char[] eName, bool dontBroadcast)
 
 	switch (weaponId) {
 		case WEPID_SMG: {
-			originalReloadDuration = 2.23529;
+			originalReloadDuration = 2.25;
 			alteredReloadDuration = hCvarReloadSpeedUzi.FloatValue;
 		}
 		case WEPID_SMG_SILENCED: {
-			originalReloadDuration = 2.23529;
+			originalReloadDuration = 2.25;
 			alteredReloadDuration = hCvarReloadSpeedSilencedSmg.FloatValue;
 		}
 		case WEPID_SMG_MP5: {
-			originalReloadDuration = 2.90196;
+			originalReloadDuration = 3.05;
 			alteredReloadDuration = hCvarReloadSpeedMP5SMG.FloatValue;
 		}			
 		case WEPID_SNIPER_SCOUT: {
@@ -77,7 +77,7 @@ public void OnWeaponReload(Event hEvent, const char[] eName, bool dontBroadcast)
 			alteredReloadDuration = hCvarReloadSpeedScoutSniper.FloatValue;
 		}
 		case WEPID_SNIPER_AWP: {
-			originalReloadDuration = 3.66667;
+			originalReloadDuration = 3.65;
 			alteredReloadDuration = hCvarReloadSpeedAWPSniper.FloatValue;
 		}
 		case WEPID_HUNTING_RIFLE: {
@@ -85,11 +85,11 @@ public void OnWeaponReload(Event hEvent, const char[] eName, bool dontBroadcast)
 			alteredReloadDuration = hCvarReloadSpeedHuntingRifle.FloatValue;
 		}
 		case WEPID_SNIPER_MILITARY: {
-			originalReloadDuration = 3.33333;
+			originalReloadDuration = 3.3;
 			alteredReloadDuration = hCvarReloadSpeedMilitarySniper.FloatValue;
 		}		
 		case WEPID_RIFLE_AK47: {
-			originalReloadDuration = 2.35714;
+			originalReloadDuration = 2.35;
 			alteredReloadDuration = hCvarReloadSpeedAK47Rifle.FloatValue;
 		}		
 		case WEPID_RIFLE_DESERT: {
@@ -159,11 +159,11 @@ public Action OnPlayerRunCmd(int client, int &buttons)
 			alteredReloadDuration = hCvarReloadSpeedAWPSniper.FloatValue;
 		}
 		case WEPID_HUNTING_RIFLE: {
-			originalReloadDuration = 3.1;
+			originalReloadDuration = 3.125;
 			alteredReloadDuration = hCvarReloadSpeedHuntingRifle.FloatValue;
 		}
 		case WEPID_SNIPER_MILITARY: {
-			originalReloadDuration = 3.5;
+			originalReloadDuration = 3.3;
 			alteredReloadDuration = hCvarReloadSpeedMilitarySniper.FloatValue;
 		}			
 		case WEPID_RIFLE_AK47: {
@@ -171,11 +171,11 @@ public Action OnPlayerRunCmd(int client, int &buttons)
 			alteredReloadDuration = hCvarReloadSpeedAK47Rifle.FloatValue;
 		}		
 		case WEPID_RIFLE_DESERT: {
-			originalReloadDuration = 3.30;
+			originalReloadDuration = 3.3;
 			alteredReloadDuration = hCvarReloadSpeedDesertRifle.FloatValue;
 		}
 		case WEPID_RIFLE: {
-			originalReloadDuration = 2.25;
+			originalReloadDuration = 2.2;
 			alteredReloadDuration = hCvarReloadSpeedRifle.FloatValue;
 		}		
 		case WEPID_RIFLE_SG552: {
