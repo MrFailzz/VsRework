@@ -30,31 +30,7 @@ public void OnMapStart()
 
 public void L4D_OnSpawnTank_Post(int client, const float vecPos[3], const float vecAng[3])
 {
-	int tankClient = client;
-	char nameBuf[MAX_NAME_LENGTH];
 	EmitSoundToAll(DANG);
-	
-	if (IsTankSelection())
-	{
-		if (IsTank(tankClient) && !IsFakeClient(tankClient)) 
-		{
-			FormatEx(nameBuf, sizeof(nameBuf), "%N", tankClient);
-		} 
-		else 
-		{
-			tankClient = GetTankSelection();
-			if (tankClient > 0 
-			&& IsClientInGame(tankClient)) 
-			{
-				FormatEx(nameBuf, sizeof(nameBuf), "%N", tankClient);
-			} 
-			else 
-			{
-				FormatEx(nameBuf, sizeof(nameBuf), "AI");
-			}
-		}
-	}
-	else
 	{
 		HookEvent("player_spawn", Event_PlayerSpawn);
 		return;
@@ -88,7 +64,3 @@ bool IsTank(int client)
 /*
  * @return			true if GetTankSelection exist false otherwise.
  */
-bool IsTankSelection()
-{
-	return (GetFeatureStatus(FeatureType_Native, "GetTankSelection") != FeatureStatus_Unknown);
-}
