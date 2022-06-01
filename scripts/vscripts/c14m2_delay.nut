@@ -3,8 +3,8 @@ Msg("**Delay started**\n")
 
 DirectorOptions <-
 {
-	MobMinSize = 2
-	MobMaxSize = 3
+	MobMinSize = 3
+	MobMaxSize = 5
         
 	BoomerLimit = 0
 	SmokerLimit = 0
@@ -13,9 +13,9 @@ DirectorOptions <-
 	JockeyLimit = 0
 	ChargerLimit = 0
         
-	MinimumStageTime = 15
+	MinimumStageTime = 20
        
-	CommonLimit = 5
+	CommonLimit = 7
 }
 
 Director.ResetMobTimer()

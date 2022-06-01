@@ -12,10 +12,10 @@ ONSLAUGHT <- 3
 SharedOptions <-
 {
  	A_CustomFinale1 = PANIC
-	A_CustomFinaleValue1 = 2
+	A_CustomFinaleValue1 = 1
 
 	A_CustomFinale2 = DELAY
-	A_CustomFinaleValue2 = 10
+	A_CustomFinaleValue2 = 15
 
 	A_CustomFinale3 = ONSLAUGHT
 	A_CustomFinaleValue3 = "c14m2_delay"
@@ -26,13 +26,13 @@ SharedOptions <-
 	A_CustomFinale5 = ONSLAUGHT
 	A_CustomFinaleValue5 = "c14m2_delay"
 
-	A_CustomFinale6 = TANK
+	A_CustomFinale6 = PANIC
 	A_CustomFinaleValue6 = 1
 
 	A_CustomFinale7 = ONSLAUGHT
 	A_CustomFinaleValue7 = "c14m2_delay"
  
- 	A_CustomFinale8 = PANIC
+ 	A_CustomFinale8 = TANK
 	A_CustomFinaleValue8 = 1
 
 	A_CustomFinale9 = ONSLAUGHT
@@ -106,8 +106,8 @@ SharedOptions <-
                       
 	//-----------------------------------------------------
 
-	PreferredMobDirection = SPAWN_FAR_AWAY_FROM_SURVIVORS
-	PreferredSpecialDirection = SPAWN_FAR_AWAY_FROM_SURVIVORS
+	PreferredMobDirection = SPAWN_LARGE_VOLUME
+	PreferredSpecialDirection = SPAWN_LARGE_VOLUME
 
 	ProhibitBosses = true
 	ZombieSpawnRange = 3000
@@ -123,11 +123,9 @@ SharedOptions <-
 PanicOptions <-
 {
 
-	MegaMobSize = 0 // randomized in OnBeginCustomFinaleStage
-	MegaMobMinSize = 15
-	MegaMobMaxSize = 30
+	MegaMobSize = 50
 	
-	CommonLimit = 15
+	CommonLimit = 20
 	
 	SpecialRespawnInterval = 40
 }
@@ -137,12 +135,12 @@ TankOptions <-
 	ShouldAllowMobsWithTank = true
 	ShouldAllowSpecialsWithTank = true
 
-	MobSpawnMinTime = 15
-	MobSpawnMaxTime = 20
-	MobMinSize = 2
-	MobMaxSize = 3
+	MobSpawnMinTime = 20
+	MobSpawnMaxTime = 25
+	MobMinSize = 3
+	MobMaxSize = 5
 
-	CommonLimit = 5
+	CommonLimit = 7
 	
 	SpecialRespawnInterval = 60
 }
@@ -158,12 +156,12 @@ DirectorOptions <- clone SharedOptions
 NumCansNeeded <- 10
 
 // duration of delay stage.
-DelayMin <- 10
-DelayMax <- 20
+DelayMin <- 20
+DelayMax <- 25
 
 // Number of touches and/or pours allowed before a delay is aborted.
-DelayPourThreshold <- 1
-DelayTouchedOrPouredThreshold <- 2
+DelayPourThreshold <- 3
+DelayTouchedOrPouredThreshold <- 6
 
 
 // Once the delay is aborted, amount of time before it progresses to next stage.
@@ -178,11 +176,11 @@ GimmeThreshold <- 4
 if ( Director.IsPlayingOnConsole() )
 {
 	DelayMin <- 20
-	DelayMax <- 30
+	DelayMax <- 25
 	
 	// Number of touches and/or pours allowed before a delay is aborted.
-	DelayPourThreshold <- 2
-	DelayTouchedOrPouredThreshold <- 4
+	DelayPourThreshold <- 3
+	DelayTouchedOrPouredThreshold <- 6
 	
 	TankOptions.ShouldAllowSpecialsWithTank = false
 	
@@ -406,10 +404,6 @@ function OnBeginCustomFinaleStage( num, type )
 	else if ( type == PANIC )
 	{
 		waveOptions = PanicOptions
-		waveOptions.MegaMobSize = PanicOptions.MegaMobMinSize + rand()%( PanicOptions.MegaMobMaxSize - PanicOptions.MegaMobMinSize )
-		
-		Msg("*************************" + waveOptions.MegaMobSize + "\n")
-		
 	}
 	else if ( type == TANK )
 	{

@@ -40,14 +40,14 @@ SharedOptions <-
 	A_CustomFinaleMusic8 = ""
 
 	A_CustomFinale9 = DELAY
-	A_CustomFinaleValue9 = 10
+	A_CustomFinaleValue9 = RandomInt( 5, 10 )
 	
 	PreferredMobDirection = SPAWN_LARGE_VOLUME
 	PreferredSpecialDirection = SPAWN_LARGE_VOLUME
 	ShouldConstrainLargeVolumeSpawn = false
 
 	ZombieSpawnRange = 3000
-	
+	EscapeSpawnTanks = false
 	SpecialRespawnInterval = 20
 } 
 
@@ -64,16 +64,7 @@ PanicOptions <-
 
 TankOptions <-
 {
-	ShouldAllowMobsWithTank = true
 	ShouldAllowSpecialsWithTank = true
-
-	MobSpawnMinTime = 10
-	MobSpawnMaxTime = 20
-	MobMinSize = 5
-	MobMaxSize = 7
-
-	CommonLimit = 12
-	
 	SpecialRespawnInterval = 30
 }
 
