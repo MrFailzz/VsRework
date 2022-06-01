@@ -7,7 +7,7 @@
 			"Early spawns"
 			{
 				"min"		"0"
-				"max"		"75"
+				"max"		"79"
 			}
 		}
 	}
@@ -111,6 +111,14 @@
 	}
 	"c2m5_concert"
 	{
+		"tank_ban_flow"
+		{
+			"Early spawn"
+			{
+				"min"		"0"
+				"max"		"40"
+			}
+		}
 	}
 	"c3m1_plankcountry"
 	{
@@ -362,6 +370,14 @@
 	}
 	"c10m1_caves"
 	{
+		"tank_ban_flow"
+		{
+			"Early spawn"
+			{
+				"min"		"0"
+				"max"		"55"
+			}
+		}
 		"witch_ban_flow"
 		{
 			"Ladders"

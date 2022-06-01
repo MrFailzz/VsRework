@@ -12,10 +12,10 @@ ONSLAUGHT <- 3
 SharedOptions <-
 {
  	A_CustomFinale1 = PANIC
-	A_CustomFinaleValue1 = 1
+	A_CustomFinaleValue1 = 2
 
-	A_CustomFinale2 = PANIC
-	A_CustomFinaleValue2 = 1
+	A_CustomFinale2 = DELAY
+	A_CustomFinaleValue2 = 10
 
 	A_CustomFinale3 = ONSLAUGHT
 	A_CustomFinaleValue3 = "c14m2_delay"
@@ -106,8 +106,8 @@ SharedOptions <-
                       
 	//-----------------------------------------------------
 
-	PreferredMobDirection = SPAWN_LARGE_VOLUME
-	PreferredSpecialDirection = SPAWN_LARGE_VOLUME
+	PreferredMobDirection = SPAWN_FAR_AWAY_FROM_SURVIVORS
+	PreferredSpecialDirection = SPAWN_FAR_AWAY_FROM_SURVIVORS
 
 	ProhibitBosses = true
 	ZombieSpawnRange = 3000
@@ -124,10 +124,10 @@ PanicOptions <-
 {
 
 	MegaMobSize = 0 // randomized in OnBeginCustomFinaleStage
-	MegaMobMinSize = 20
+	MegaMobMinSize = 15
 	MegaMobMaxSize = 30
 	
-	CommonLimit = 12
+	CommonLimit = 15
 	
 	SpecialRespawnInterval = 40
 }
@@ -137,7 +137,7 @@ TankOptions <-
 	ShouldAllowMobsWithTank = true
 	ShouldAllowSpecialsWithTank = true
 
-	MobSpawnMinTime = 10
+	MobSpawnMinTime = 15
 	MobSpawnMaxTime = 20
 	MobMinSize = 2
 	MobMaxSize = 3
