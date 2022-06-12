@@ -66,3 +66,10 @@ function OnBeginCustomFinaleStage( num, type )
 	if ( type == 2 )
 		EntFire( "orator_boat_radio", "SpeakResponseConcept", "boat_radio_intransit" );
 }
+
+function EnableEscapeTanks()
+{
+	printl( "Chase Tanks Enabled!" );
+	
+	MapScript.DirectorOptions.EscapeSpawnTanks <- true
+}

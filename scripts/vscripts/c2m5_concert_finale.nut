@@ -143,3 +143,10 @@ function OnBeginCustomFinaleStage( num, type )
 		printl("========================================================");
 	}
 }
+
+function EnableEscapeTanks()
+{
+	printl( "Chase Tanks Enabled!" );
+	
+	MapScript.DirectorOptions.EscapeSpawnTanks <- true
+}

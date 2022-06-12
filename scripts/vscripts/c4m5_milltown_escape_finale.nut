@@ -52,3 +52,10 @@ if ( "DirectorOptions" in LocalScript && "ProhibitBosses" in LocalScript.Directo
 
 /*
 */
+
+function EnableEscapeTanks()
+{
+	printl( "Chase Tanks Enabled!" );
+	
+	MapScript.DirectorOptions.EscapeSpawnTanks <- true
+}

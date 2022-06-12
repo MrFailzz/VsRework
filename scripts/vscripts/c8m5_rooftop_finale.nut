@@ -66,3 +66,10 @@ function OnBeginCustomFinaleStage( num, type )
 	if ( type == 2 )
 		EntFire( "pilot", "SpeakResponseConcept", "hospital_radio_intransit" );
 }
+
+function EnableEscapeTanks()
+{
+	printl( "Chase Tanks Enabled!" );
+	
+	MapScript.DirectorOptions.EscapeSpawnTanks <- true
+}

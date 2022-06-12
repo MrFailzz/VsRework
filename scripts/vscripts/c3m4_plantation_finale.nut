@@ -41,3 +41,9 @@ DirectorOptions <-
 	//-----------------------------------------------------
 }
 
+function EnableEscapeTanks()
+{
+	printl( "Chase Tanks Enabled!" );
+	
+	MapScript.DirectorOptions.EscapeSpawnTanks <- true
+}

@@ -58,3 +58,10 @@ DirectorOptions <-
 	MusicDynamicMobStopSize = 2
 	MusicDynamicMobScanStopSize = 1
 }
+
+function EnableEscapeTanks()
+{
+	printl( "Chase Tanks Enabled!" );
+	
+	MapScript.DirectorOptions.EscapeSpawnTanks <- true
+}

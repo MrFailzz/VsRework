@@ -17,96 +17,96 @@ SharedOptions <-
 	A_CustomFinale2 = DELAY
 	A_CustomFinaleValue2 = 15
 
-	A_CustomFinale3 = ONSLAUGHT
-	A_CustomFinaleValue3 = "c14m2_delay"
+	A_CustomFinale3 = DELAY
+	A_CustomFinaleValue3 = 10
         
 	A_CustomFinale4 = PANIC
 	A_CustomFinaleValue4 = 1
 
-	A_CustomFinale5 = ONSLAUGHT
-	A_CustomFinaleValue5 = "c14m2_delay"
+	A_CustomFinale5 = DELAY
+	A_CustomFinaleValue5 = 10
 
 	A_CustomFinale6 = PANIC
 	A_CustomFinaleValue6 = 1
 
-	A_CustomFinale7 = ONSLAUGHT
-	A_CustomFinaleValue7 = "c14m2_delay"
+	A_CustomFinale7 = DELAY
+	A_CustomFinaleValue7 = 10
  
  	A_CustomFinale8 = TANK
 	A_CustomFinaleValue8 = 1
 
-	A_CustomFinale9 = ONSLAUGHT
-	A_CustomFinaleValue9 = "c14m2_delay"
+	A_CustomFinale9 = DELAY
+	A_CustomFinaleValue9 = 15
  
  	A_CustomFinale10 = PANIC
 	A_CustomFinaleValue10 = 1
 
-	A_CustomFinale11 = ONSLAUGHT
-	A_CustomFinaleValue11 = "c14m2_delay"
+	A_CustomFinale11 = DELAY
+	A_CustomFinaleValue11 = 10
 
 	A_CustomFinale12 = PANIC
 	A_CustomFinaleValue12 = 1
         
- 	A_CustomFinale13 = ONSLAUGHT
-	A_CustomFinaleValue13 = "c14m2_delay"
+ 	A_CustomFinale13 = DELAY
+	A_CustomFinaleValue13 = 10
         
 	A_CustomFinale14 = TANK
 	A_CustomFinaleValue14 = 1   
         
- 	A_CustomFinale15 = ONSLAUGHT
-	A_CustomFinaleValue15 = "c14m2_delay"
+ 	A_CustomFinale15 = DELAY
+	A_CustomFinaleValue15 = 15
         
 	A_CustomFinale16 = PANIC
 	A_CustomFinaleValue16 = 1  
                   
- 	A_CustomFinale17 = ONSLAUGHT
-	A_CustomFinaleValue17 = "c14m2_delay"    
+ 	A_CustomFinale17 = DELAY
+	A_CustomFinaleValue17 = 10  
                        
  	A_CustomFinale18 = PANIC
 	A_CustomFinaleValue18 = 1  
 	
- 	A_CustomFinale19 = ONSLAUGHT
-	A_CustomFinaleValue19 = "c14m2_delay"
+ 	A_CustomFinale19 = DELAY
+	A_CustomFinaleValue19 = 10
         
 	A_CustomFinale20 = PANIC
 	A_CustomFinaleValue20 = 1   
         
- 	A_CustomFinale21 = ONSLAUGHT
-	A_CustomFinaleValue21 = "c14m2_delay"
+ 	A_CustomFinale21 = DELAY
+	A_CustomFinaleValue21 = 10
         
 	A_CustomFinale22 = TANK
 	A_CustomFinaleValue22 = 1  
                   
- 	A_CustomFinale23 = ONSLAUGHT
-	A_CustomFinaleValue23 = "c14m2_delay"    
+ 	A_CustomFinale23 = DELAY
+	A_CustomFinaleValue23 = 15  
                        
  	A_CustomFinale24 = PANIC
 	A_CustomFinaleValue24 = 1
 															
- 	A_CustomFinale25 = ONSLAUGHT
-	A_CustomFinaleValue25 = "c14m2_delay"
+ 	A_CustomFinale25 = DELAY
+	A_CustomFinaleValue25 = 10
         
 	A_CustomFinale26 = PANIC
 	A_CustomFinaleValue26 = 1   
         
- 	A_CustomFinale27 = ONSLAUGHT
-	A_CustomFinaleValue27 = "c14m2_delay"
+ 	A_CustomFinale27 = DELAY
+	A_CustomFinaleValue27 = 10
         
 	A_CustomFinale28 = PANIC
 	A_CustomFinaleValue28 = 1  
                   
- 	A_CustomFinale29 = ONSLAUGHT
-	A_CustomFinaleValue29 = "c14m2_delay"    
+ 	A_CustomFinale29 = DELAY
+	A_CustomFinaleValue29 = 10 
                        
  	A_CustomFinale30 = PANIC
 	A_CustomFinaleValue30 = 1
 
- 	A_CustomFinale31 = ONSLAUGHT
-	A_CustomFinaleValue31 = "c14m2_delay"
+ 	A_CustomFinale31 = DELAY
+	A_CustomFinaleValue31 = 10
                       
 	//-----------------------------------------------------
 
-	PreferredMobDirection = SPAWN_LARGE_VOLUME
+	PreferredMobDirection = SPAWN_BEHIND_SURVIVORS
 	PreferredSpecialDirection = SPAWN_LARGE_VOLUME
 
 	ProhibitBosses = true
@@ -132,15 +132,8 @@ PanicOptions <-
 
 TankOptions <-
 {
-	ShouldAllowMobsWithTank = true
+	ShouldAllowMobsWithTank = false
 	ShouldAllowSpecialsWithTank = true
-
-	MobSpawnMinTime = 20
-	MobSpawnMaxTime = 25
-	MobMinSize = 3
-	MobMaxSize = 5
-
-	CommonLimit = 7
 	
 	SpecialRespawnInterval = 60
 }
@@ -155,37 +148,6 @@ DirectorOptions <- clone SharedOptions
 // number of cans needed to escape.
 NumCansNeeded <- 10
 
-// duration of delay stage.
-DelayMin <- 20
-DelayMax <- 25
-
-// Number of touches and/or pours allowed before a delay is aborted.
-DelayPourThreshold <- 3
-DelayTouchedOrPouredThreshold <- 6
-
-
-// Once the delay is aborted, amount of time before it progresses to next stage.
-AbortDelayMin <- 1
-AbortDelayMax <- 3
-
-// Number of touches and pours it takes to transition out of c1m4_finale_wave_1
-GimmeThreshold <- 4
-
-
-// console overrides
-if ( Director.IsPlayingOnConsole() )
-{
-	DelayMin <- 20
-	DelayMax <- 25
-	
-	// Number of touches and/or pours allowed before a delay is aborted.
-	DelayPourThreshold <- 3
-	DelayTouchedOrPouredThreshold <- 6
-	
-	TankOptions.ShouldAllowSpecialsWithTank = false
-	
-}
-
 local difficulty = GetDifficulty();
 
 //-----------------------------------------------------
@@ -197,15 +159,7 @@ GasCansPoured           <- 0
 DelayTouchedOrPoured    <- 0
 DelayPoured             <- 0
 
-EntFire( "timer_delay_end", "LowerRandomBound", DelayMin )
-EntFire( "timer_delay_end", "UpperRandomBound", DelayMax )
-EntFire( "timer_delay_abort", "LowerRandomBound", AbortDelayMin )
-EntFire( "timer_delay_abort", "UpperRandomBound", AbortDelayMax )
-
 EntFire( "progress_display", "SetTotalItems", NumCansNeeded )
-
-function AbortDelay(){}  	// only defined during a delay, in c14m2_delay.nut
-function EndDelay(){}		// only defined during a delay, in c14m2_delay.nut
 
 //-----------------------------------------------------
 
@@ -315,14 +269,6 @@ switch( difficulty )
 		break;
 }
 
-function GasCanTouched()
-{
-    GasCansTouched++
-    Msg(" Touched: " + GasCansTouched + "\n")   
-     
-    EvalGasCansPouredOrTouched()    
-}
-
 function GasCanPoured()
 {
     GasCansPoured++
@@ -342,28 +288,6 @@ function GasCanPoured()
 	}
 
     EvalGasCansPouredOrTouched()
-}
-
-function EvalGasCansPouredOrTouched()
-{
-    TouchedOrPoured <- GasCansPoured + GasCansTouched
-    Msg(" Poured or touched: " + TouchedOrPoured + "\n")
-
-    DelayTouchedOrPoured++
-    Msg(" DelayTouchedOrPoured: " + DelayTouchedOrPoured + "\n")
-    Msg(" DelayPoured: " + DelayPoured + "\n")
-    
-    if (( DelayTouchedOrPoured >= DelayTouchedOrPouredThreshold ) || ( DelayPoured >= DelayPourThreshold ))
-    {
-        AbortDelay()
-    }
-    
-    switch( TouchedOrPoured )
-    {
-        case GimmeThreshold:
-            EntFire( "director", "EndCustomScriptedStage" )
-            break
-    }
 }
 
 //-----------------------------------------------------

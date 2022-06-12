@@ -26,10 +26,10 @@
 	{
 		"tank_ban_flow"
 		{
-			"Event escalators"
+			"Late tanks"
 			{
-				"min"		"64"
-				"max"		"68"
+				"min"		"68"
+				"max"		"100"
 			}
 		}
 		"witch_ban_flow"
