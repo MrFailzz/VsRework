@@ -106,8 +106,9 @@ SharedOptions <-
                       
 	//-----------------------------------------------------
 
-	PreferredMobDirection = SPAWN_BEHIND_SURVIVORS
+	PreferredMobDirection = SPAWN_LARGE_VOLUME
 	PreferredSpecialDirection = SPAWN_LARGE_VOLUME
+	ShouldConstrainLargeVolumeSpawn = false
 
 	ProhibitBosses = true
 	ZombieSpawnRange = 3000
@@ -120,13 +121,17 @@ SharedOptions <-
 	MusicDynamicMobScanStopSize = 1
 }
 
+InitialPanicOptions <-
+{
+	MegaMobSize = 50
+	CommonLimit = 20
+	SpecialRespawnInterval = 40
+}
+
 PanicOptions <-
 {
-
-	MegaMobSize = 50
-	
-	CommonLimit = 20
-	
+	MegaMobSize = 40
+	CommonLimit = 15
 	SpecialRespawnInterval = 40
 }
 
@@ -134,7 +139,6 @@ TankOptions <-
 {
 	ShouldAllowMobsWithTank = false
 	ShouldAllowSpecialsWithTank = true
-	
 	SpecialRespawnInterval = 60
 }
 
@@ -305,7 +309,11 @@ function OnBeginCustomFinaleStage( num, type )
 	printl( "Beginning custom finale stage " + num + " of type " + type );
 	
 	local waveOptions = null
-	if ( num == 2 )
+	if ( num == 1 )
+	{
+		waveOptions = InitialPanicOptions
+	}
+	else if ( num == 2 )
 	{
 		EntFire( "relay_boat_coming2", "Trigger" );
 		// Delay lasts 10 seconds, next stage turns off lights immediately

@@ -124,9 +124,9 @@
 	{
 		"tank_ban_flow"
 		{
-			"Before ferry (bugged spawn)"
+			"Before ferry (bugged spawn)45-62"
 			{
-				"min"		"45"
+				"min"		"0"
 				"max"		"62"
 			}
 		}
@@ -353,14 +353,6 @@
 	}
 	"c8m5_rooftop"
 	{
-		"tank_ban_flow"
-		{
-			"Early spawn"
-			{
-				"min"		"0"
-				"max"		"45"
-			}
-		}
 	}
 	"c9m1_alleys"
 	{
@@ -457,14 +449,6 @@
 	}
 	"c12m4_barn"
 	{
-		"tank_ban_flow"
-		{
-			"Warehouse"
-			{
-				"min"		"39"
-				"max"		"54"
-			}
-		}
 	}
 	"c12m5_cornfield"
 	{
