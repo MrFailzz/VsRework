@@ -49,7 +49,7 @@ DirectorOptions <-
 	
 	TankLimit = 1
 	WitchLimit = 0
-	CommonLimit = 20
+	CommonLimit = 30
 	HordeEscapeCommonLimit = 15
 	EscapeSpawnTanks = false
 	//SpecialRespawnInterval = 80

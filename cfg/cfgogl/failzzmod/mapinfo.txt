@@ -116,7 +116,7 @@
 			"Early spawn"
 			{
 				"min"		"0"
-				"max"		"40"
+				"max"		"73"
 			}
 		}
 	}
@@ -147,7 +147,7 @@
 			"Early spawns"
 			{
 				"min"		"0"
-				"max"		"20"
+				"max"		"30"
 			}
 		}
 	}
@@ -304,7 +304,7 @@
 			"Early spawns"
 			{
 				"min"		"0"
-				"max"		"70"
+				"max"		"74"
 			}
 		}
 	}
@@ -367,7 +367,7 @@
 			"Early spawn"
 			{
 				"min"		"0"
-				"max"		"55"
+				"max"		"50"
 			}
 		}
 		"witch_ban_flow"
@@ -401,6 +401,14 @@
 	}
 	"c11m1_greenhouse"
 	{
+		"tank_ban_flow"
+		{
+			"Early spawn"
+			{
+				"min"		"0"
+				"max"		"50"
+			}
+		}
 	}
 	"c11m2_offices"
 	{

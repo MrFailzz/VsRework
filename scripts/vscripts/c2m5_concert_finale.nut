@@ -59,7 +59,7 @@ InitialPanicOptions <-
 
 PanicOptions <-
 {
-	CommonLimit = 25
+	CommonLimit = 30
 }
 
 TankOptions <-

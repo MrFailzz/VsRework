@@ -3,171 +3,85 @@ Msg("Initiating c14m2_lighthouse_finale script\n");
 StageDelay <- 15
 PreEscapeDelay <- 10
 
+//-----------------------------------------------------
 PANIC <- 0
 TANK <- 1
 DELAY <- 2
 ONSLAUGHT <- 3
 //-----------------------------------------------------
 
-SharedOptions <-
+DirectorOptions <-
 {
- 	A_CustomFinale1 = PANIC
-	A_CustomFinaleValue1 = 1
-
-	A_CustomFinale2 = DELAY
-	A_CustomFinaleValue2 = 15
-
-	A_CustomFinale3 = DELAY
-	A_CustomFinaleValue3 = 10
-        
-	A_CustomFinale4 = PANIC
-	A_CustomFinaleValue4 = 1
-
-	A_CustomFinale5 = DELAY
-	A_CustomFinaleValue5 = 10
-
-	A_CustomFinale6 = PANIC
-	A_CustomFinaleValue6 = 1
-
-	A_CustomFinale7 = DELAY
-	A_CustomFinaleValue7 = 10
- 
- 	A_CustomFinale8 = TANK
-	A_CustomFinaleValue8 = 1
-
-	A_CustomFinale9 = DELAY
-	A_CustomFinaleValue9 = 15
- 
- 	A_CustomFinale10 = PANIC
-	A_CustomFinaleValue10 = 1
-
-	A_CustomFinale11 = DELAY
-	A_CustomFinaleValue11 = 10
-
-	A_CustomFinale12 = PANIC
-	A_CustomFinaleValue12 = 1
-        
- 	A_CustomFinale13 = DELAY
-	A_CustomFinaleValue13 = 10
-        
-	A_CustomFinale14 = TANK
-	A_CustomFinaleValue14 = 1   
-        
- 	A_CustomFinale15 = DELAY
-	A_CustomFinaleValue15 = 15
-        
-	A_CustomFinale16 = PANIC
-	A_CustomFinaleValue16 = 1  
-                  
- 	A_CustomFinale17 = DELAY
-	A_CustomFinaleValue17 = 10  
-                       
- 	A_CustomFinale18 = PANIC
-	A_CustomFinaleValue18 = 1  
+	A_CustomFinale_StageCount = 8
 	
- 	A_CustomFinale19 = DELAY
-	A_CustomFinaleValue19 = 10
-        
-	A_CustomFinale20 = PANIC
-	A_CustomFinaleValue20 = 1   
-        
- 	A_CustomFinale21 = DELAY
-	A_CustomFinaleValue21 = 10
-        
-	A_CustomFinale22 = TANK
-	A_CustomFinaleValue22 = 1  
-                  
- 	A_CustomFinale23 = DELAY
-	A_CustomFinaleValue23 = 15  
-                       
- 	A_CustomFinale24 = PANIC
-	A_CustomFinaleValue24 = 1
-															
- 	A_CustomFinale25 = DELAY
-	A_CustomFinaleValue25 = 10
-        
-	A_CustomFinale26 = PANIC
-	A_CustomFinaleValue26 = 1   
-        
- 	A_CustomFinale27 = DELAY
-	A_CustomFinaleValue27 = 10
-        
-	A_CustomFinale28 = PANIC
-	A_CustomFinaleValue28 = 1  
-                  
- 	A_CustomFinale29 = DELAY
-	A_CustomFinaleValue29 = 10 
-                       
- 	A_CustomFinale30 = PANIC
-	A_CustomFinaleValue30 = 1
-
- 	A_CustomFinale31 = DELAY
-	A_CustomFinaleValue31 = 10
-                      
+	A_CustomFinale1 		= PANIC
+	A_CustomFinaleValue1 	= 2
+	A_CustomFinale2 		= DELAY
+	A_CustomFinaleValue2 	= StageDelay
+	A_CustomFinale3 		= TANK
+	A_CustomFinaleValue3 	= 1
+	A_CustomFinale4 		= DELAY
+	A_CustomFinaleValue4 	= StageDelay
+	A_CustomFinale5			= ONSLAUGHT
+	A_CustomFinaleValue5 	= "c14m2_gauntlet"
+	A_CustomFinale6 		= DELAY
+	A_CustomFinaleValue6 	= StageDelay
+	A_CustomFinale7			= TANK
+	A_CustomFinaleValue7	= 2
+	A_CustomFinaleMusic7	= "Event.TankMidpoint_Metal"
+	A_CustomFinale8 		= DELAY
+	A_CustomFinaleValue8 	= PreEscapeDelay
 	//-----------------------------------------------------
 
-	PreferredMobDirection = SPAWN_LARGE_VOLUME
-	PreferredSpecialDirection = SPAWN_LARGE_VOLUME
-	ShouldConstrainLargeVolumeSpawn = false
-
 	ProhibitBosses = true
-	ZombieSpawnRange = 3000
-	MobRechargeRate = 0.5
-	HordeEscapeCommonLimit = 15
-	BileMobSize = 15
-	
-	MusicDynamicMobSpawnSize = 8
-	MusicDynamicMobStopSize = 2
-	MusicDynamicMobScanStopSize = 1
+	HordeEscapeCommonLimit = 20
+	EscapeSpawnTanks = false
 }
-
-InitialPanicOptions <-
-{
-	MegaMobSize = 50
-	CommonLimit = 20
-	SpecialRespawnInterval = 40
-}
-
-PanicOptions <-
-{
-	MegaMobSize = 40
-	CommonLimit = 15
-	SpecialRespawnInterval = 40
-}
-
-TankOptions <-
-{
-	ShouldAllowMobsWithTank = false
-	ShouldAllowSpecialsWithTank = true
-	SpecialRespawnInterval = 60
-}
-
-
-DirectorOptions <- clone SharedOptions
-{
-}
-
-//-----------------------------------------------------
-
-// number of cans needed to escape.
-NumCansNeeded <- 10
 
 local difficulty = GetDifficulty();
 
+if ( Director.GetGameModeBase() == "versus" )
+{
+	DirectorOptions.rawdelete("A_CustomFinaleMusic7");
+	DirectorOptions.A_CustomFinale_StageCount = 11;
+	DirectorOptions.A_CustomFinale6 = ONSLAUGHT;
+	DirectorOptions.A_CustomFinaleValue6 = "c14m2_gauntlet_vs";
+	DirectorOptions.A_CustomFinale7 = ONSLAUGHT;
+	DirectorOptions.A_CustomFinaleValue7 = "c14m2_gauntlet_vs";
+	DirectorOptions.A_CustomFinale8 = ONSLAUGHT;
+	DirectorOptions.A_CustomFinaleValue8 = "c14m2_gauntlet_vs";
+	DirectorOptions.A_CustomFinale9 <- DELAY;
+	DirectorOptions.A_CustomFinaleValue9 <- StageDelay;
+	DirectorOptions.A_CustomFinale10 <- TANK;
+	DirectorOptions.A_CustomFinaleValue10 <- 1;
+	DirectorOptions.A_CustomFinaleMusic10 <- "Event.TankMidpoint_Metal";
+	DirectorOptions.A_CustomFinale11 <- DELAY;
+	DirectorOptions.A_CustomFinaleValue11 <- PreEscapeDelay;
+	difficulty = 2;
+}
+else
+{
+	if ( difficulty == 2 || difficulty == 3 )
+	{
+		DirectorOptions.rawdelete("A_CustomFinaleMusic7");
+		DirectorOptions.A_CustomFinale_StageCount = 12;
+		DirectorOptions.A_CustomFinaleValue7 = 1;
+		DirectorOptions.A_CustomFinaleValue8 = StageDelay;
+		DirectorOptions.A_CustomFinale9 <- PANIC;
+		DirectorOptions.A_CustomFinaleValue9 <- 2;
+		DirectorOptions.A_CustomFinale10 <- DELAY;
+		DirectorOptions.A_CustomFinaleValue10 <- StageDelay;
+		DirectorOptions.A_CustomFinale11 <- TANK;
+		DirectorOptions.A_CustomFinaleValue11 <- 2;
+		DirectorOptions.A_CustomFinaleMusic11 <- "Event.TankMidpoint_Metal"
+		DirectorOptions.A_CustomFinale12 <- DELAY;
+		DirectorOptions.A_CustomFinaleValue12 <- PreEscapeDelay;
+	}
+}
+
 //-----------------------------------------------------
-//      INIT
-//-----------------------------------------------------
 
-GasCansTouched          <- 0
-GasCansPoured           <- 0
-DelayTouchedOrPoured    <- 0
-DelayPoured             <- 0
-
-EntFire( "progress_display", "SetTotalItems", NumCansNeeded )
-
-//-----------------------------------------------------
-
-function SpawnScavengeCans( difficulty )
+function SpawnScavengeCans()
 {
 	local function SpawnCan( gascan )
 	{
@@ -200,51 +114,26 @@ function SpawnScavengeCans( difficulty )
 		if ( can_spawner )
 			DoEntFire( "!self", "SpawnItem", "", 0, null, can_spawner );
 	}
-	
-	switch( difficulty )
-	{
-		case 3:
+
 		{
 			local gascan = null;
-			while ( gascan = Entities.FindByName( gascan, "gascans_finale_expert" ) )
+			while ( gascan = Entities.FindByName( gascan, "gascans_finale_*" ) )
 			{
 				if ( gascan.IsValid() )
 					SpawnCan( gascan );
 			}
 		}
-		case 2:
-		{
-			local gascan = null;
-			while ( gascan = Entities.FindByName( gascan, "gascans_finale_advanced" ) )
-			{
-				if ( gascan.IsValid() )
-					SpawnCan( gascan );
-			}
-		}
-		case 1:
-		{
-			local gascan = null;
-			while ( gascan = Entities.FindByName( gascan, "gascans_finale_normal" ) )
-			{
-				if ( gascan.IsValid() )
-					SpawnCan( gascan );
-			}
-		}
-		case 0:
-		{
-			local gascan = null;
-			while ( gascan = Entities.FindByName( gascan, "gascans_finale_easy" ) )
-			{
-				if ( gascan.IsValid() )
-					SpawnCan( gascan );
-			}
-			break;
-		}
-		default:
-			break;
-	}
 	
 	EntFire( "gascans_finale_*", "Kill" );
+}
+	
+// number of cans needed to escape.
+NumCansNeeded <- 10
+
+// fewer cans in single player since bots don't help much
+if ( Director.IsSinglePlayerGame() )
+{
+	NumCansNeeded <- 6
 }
 
 switch( difficulty )
@@ -273,11 +162,34 @@ switch( difficulty )
 		break;
 }
 
+EntFire( "progress_display", "SetTotalItems", NumCansNeeded );
+
+//-----------------------------------------------------
+//      INIT
+//-----------------------------------------------------
+
+GasCansTouched          <- 0
+GasCansPoured           <- 0
+ScavengeCansPoured		<- 0
+ScavengeCansNeeded		<- 2
+
+local EscapeStage = DirectorOptions.A_CustomFinale_StageCount;
+
+//-----------------------------------------------------
+
+function GasCanTouched()
+{
+	GasCansTouched++;
+	if ( developer() > 0 )
+		Msg(" Touched: " + GasCansTouched + "\n");
+}
+
 function GasCanPoured()
 {
-    GasCansPoured++
-    DelayPoured++
-    Msg(" Poured: " + GasCansPoured + "\n")
+	GasCansPoured++;
+	ScavengeCansPoured++;
+	if ( developer() > 0 )
+		Msg(" Poured: " + GasCansPoured + "\n");
 
 	if ( GasCansPoured == 1 )
 		EntFire( "explain_fuel_generator", "Kill" );
@@ -285,36 +197,29 @@ function GasCanPoured()
 	{
 		if ( developer() > 0 )
 			Msg(" needed: " + NumCansNeeded + "\n");
-		EntFire( "relay_start_boat", "Trigger", "", 45 )
 		EntFire( "relay_generator_ready", "Trigger", "", 0.1 );
 		EntFire( "weapon_scavenge_item_spawn", "TurnGlowsOff" );
 		EntFire( "weapon_scavenge_item_spawn", "Kill" );
+		EntFire( "director", "EndCustomScriptedStage", "", 5 );
 	}
-
-    EvalGasCansPouredOrTouched()
+	
+	if ( Director.GetGameModeBase() == "versus" && ScavengeCansPoured == 3 && GasCansPoured < NumCansNeeded )
+	{
+		ScavengeCansPoured = 0;
+		EntFire( "radio", "AdvanceFinaleState" );
+	}
 }
 
 //-----------------------------------------------------
 
-function AddTableToTable( dest, src )
-{
-	foreach( key, val in src )
-	{
-		dest[key] <- val
-	}
-}
-
 function OnBeginCustomFinaleStage( num, type )
 {
-	printl( "Beginning custom finale stage " + num + " of type " + type );
+	if ( developer() > 0 )
+		printl( "Beginning custom finale stage " + num + " of type " + type );
 	
-	local waveOptions = null
-	if ( num == 1 )
+	if ( num == 4 )
 	{
-		waveOptions = InitialPanicOptions
-	}
-	else if ( num == 2 )
-	{
+		EntFire( "gascans_finale_expert", "Kill" );
 		EntFire( "relay_boat_coming2", "Trigger" );
 		// Delay lasts 10 seconds, next stage turns off lights immediately
 		EntFire( "lighthouse_light", "SetPattern", "mmamammmmammamamaaamammma", 7.0 );
@@ -333,51 +238,19 @@ function OnBeginCustomFinaleStage( num, type )
 		EntFire( "spotlight_glow", "ShowSprite", "", 8.5 );
 		EntFire( "brush_light", "Disable", "", 8.5 );
 	}
-	else if ( type == PANIC )
-	{
-		waveOptions = PanicOptions
-	}
-	else if ( type == TANK )
-	{
-		waveOptions = TankOptions
-	}
-	else if ( num == 3 )
+	else if ( num == 5 )
 	{
 		EntFire( "relay_lighthouse_off", "Trigger" );
-		SpawnScavengeCans( difficulty );
+		SpawnScavengeCans();
 	}
-	
-	//---------------------------------
+	else if ( num == EscapeStage )
+		EntFire( "relay_start_boat", "Trigger" );
+}
 
-
-	MapScript.DirectorOptions.clear()
-	
-
-	AddTableToTable( MapScript.DirectorOptions, SharedOptions );
-
-	if ( waveOptions != null )
-	{
-		AddTableToTable( MapScript.DirectorOptions, waveOptions );
-	}
-	
-	
-	Director.ResetMobTimer()
-	
+function GetCustomScriptedStageProgress( defvalue )
+{
+	local progress = ScavengeCansPoured.tofloat() / ScavengeCansNeeded.tofloat();
 	if ( developer() > 0 )
-	{
-		Msg( "\n*****\nMapScript.DirectorOptions:\n" );
-		foreach( key, value in MapScript.DirectorOptions )
-		{
-			Msg( "    " + key + " = " + value + "\n" );
-		}
-
-		if ( LocalScript.rawin( "DirectorOptions" ) )
-		{
-			Msg( "\n*****\nLocalScript.DirectorOptions:\n" );
-			foreach( key, value in LocalScript.DirectorOptions )
-			{
-				Msg( "    " + key + " = " + value + "\n" );
-			}
-		}
-	}
+		Msg( "Progress was " + defvalue + ", now: " + ScavengeCansPoured + " poured / " + ScavengeCansNeeded + " needed = " + progress + "\n" );
+	return progress;
 }
