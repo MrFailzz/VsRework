@@ -8,7 +8,7 @@ JunkyardCommonLimit <- 25	// use a lower common limit to combat infected related
 
 if ( Director.IsPlayingOnConsole() )
 {
-	JunkyardCommonLimit <- 25
+	JunkyardCommonLimit <- 20
 }
 
 

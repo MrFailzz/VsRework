@@ -15,7 +15,7 @@ DirectorOptions <-
 	A_CustomFinale_StageCount = 8
 	
 	A_CustomFinale1 		= PANIC
-	A_CustomFinaleValue1 	= 2
+	A_CustomFinaleValue1 	= 1
 	A_CustomFinale2 		= DELAY
 	A_CustomFinaleValue2 	= StageDelay
 	A_CustomFinale3 		= TANK
@@ -36,6 +36,7 @@ DirectorOptions <-
 	ProhibitBosses = true
 	HordeEscapeCommonLimit = 20
 	EscapeSpawnTanks = false
+	CommonLimit = 20
 }
 
 local difficulty = GetDifficulty();
@@ -43,20 +44,18 @@ local difficulty = GetDifficulty();
 if ( Director.GetGameModeBase() == "versus" )
 {
 	DirectorOptions.rawdelete("A_CustomFinaleMusic7");
-	DirectorOptions.A_CustomFinale_StageCount = 11;
+	DirectorOptions.A_CustomFinale_StageCount = 10;
 	DirectorOptions.A_CustomFinale6 = ONSLAUGHT;
 	DirectorOptions.A_CustomFinaleValue6 = "c14m2_gauntlet_vs";
 	DirectorOptions.A_CustomFinale7 = ONSLAUGHT;
 	DirectorOptions.A_CustomFinaleValue7 = "c14m2_gauntlet_vs";
-	DirectorOptions.A_CustomFinale8 = ONSLAUGHT;
-	DirectorOptions.A_CustomFinaleValue8 = "c14m2_gauntlet_vs";
-	DirectorOptions.A_CustomFinale9 <- DELAY;
-	DirectorOptions.A_CustomFinaleValue9 <- StageDelay;
-	DirectorOptions.A_CustomFinale10 <- TANK;
-	DirectorOptions.A_CustomFinaleValue10 <- 1;
-	DirectorOptions.A_CustomFinaleMusic10 <- "Event.TankMidpoint_Metal";
-	DirectorOptions.A_CustomFinale11 <- DELAY;
-	DirectorOptions.A_CustomFinaleValue11 <- PreEscapeDelay;
+	DirectorOptions.A_CustomFinale8 <- DELAY;
+	DirectorOptions.A_CustomFinaleValue8 <- StageDelay;
+	DirectorOptions.A_CustomFinale9 <- TANK;
+	DirectorOptions.A_CustomFinaleValue9 <- 1;
+	DirectorOptions.A_CustomFinaleMusic9 <- "Event.TankMidpoint_Metal";
+	DirectorOptions.A_CustomFinale10 <- DELAY;
+	DirectorOptions.A_CustomFinaleValue10 <- PreEscapeDelay;
 	difficulty = 2;
 }
 else
@@ -128,7 +127,7 @@ function SpawnScavengeCans()
 }
 	
 // number of cans needed to escape.
-NumCansNeeded <- 10
+NumCansNeeded <- 6
 
 // fewer cans in single player since bots don't help much
 if ( Director.IsSinglePlayerGame() )
@@ -203,7 +202,7 @@ function GasCanPoured()
 		EntFire( "director", "EndCustomScriptedStage", "", 5 );
 	}
 	
-	if ( Director.GetGameModeBase() == "versus" && ScavengeCansPoured == 3 && GasCansPoured < NumCansNeeded )
+	if ( Director.GetGameModeBase() == "versus" && ScavengeCansPoured == 2 && GasCansPoured < NumCansNeeded )
 	{
 		ScavengeCansPoured = 0;
 		EntFire( "radio", "AdvanceFinaleState" );
@@ -219,7 +218,7 @@ function OnBeginCustomFinaleStage( num, type )
 	
 	if ( num == 4 )
 	{
-		EntFire( "gascans_finale_expert", "Kill" );
+		EntFire( "gascans_finale_easy", "Kill" );
 		EntFire( "relay_boat_coming2", "Trigger" );
 		// Delay lasts 10 seconds, next stage turns off lights immediately
 		EntFire( "lighthouse_light", "SetPattern", "mmamammmmammamamaaamammma", 7.0 );
