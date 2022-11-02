@@ -13,7 +13,7 @@ SharedOptions <-
 {
 	A_CustomFinale_StageCount = 9
 	
- 	A_CustomFinale1 = PANIC
+ 	A_CustomFinale1 = DELAY
 	A_CustomFinaleValue1 = 1
 	
  	A_CustomFinale2 = PANIC

@@ -34,7 +34,7 @@ DirectorOptions <-
 	//-----------------------------------------------------
 
 	ProhibitBosses = true
-	HordeEscapeCommonLimit = 20
+	HordeEscapeCommonLimit = 15
 	EscapeSpawnTanks = false
 	CommonLimit = 20
 }
@@ -46,9 +46,9 @@ if ( Director.GetGameModeBase() == "versus" )
 	DirectorOptions.rawdelete("A_CustomFinaleMusic7");
 	DirectorOptions.A_CustomFinale_StageCount = 10;
 	DirectorOptions.A_CustomFinale6 = ONSLAUGHT;
-	DirectorOptions.A_CustomFinaleValue6 = "c14m2_gauntlet_vs";
+	DirectorOptions.A_CustomFinaleValue6 = "c14m2_gauntlet";
 	DirectorOptions.A_CustomFinale7 = ONSLAUGHT;
-	DirectorOptions.A_CustomFinaleValue7 = "c14m2_gauntlet_vs";
+	DirectorOptions.A_CustomFinaleValue7 = "c14m2_gauntlet";
 	DirectorOptions.A_CustomFinale8 <- DELAY;
 	DirectorOptions.A_CustomFinaleValue8 <- StageDelay;
 	DirectorOptions.A_CustomFinale9 <- TANK;
