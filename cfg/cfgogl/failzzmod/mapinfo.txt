@@ -10,6 +10,14 @@
 				"max"		"79"
 			}
 		}
+		"witch_ban_flow"
+		{
+			"Event"
+			{
+				"min"		"0"
+				"max"		"79"
+			}
+		}
 	}
 	"c1m2_streets"
 	{
