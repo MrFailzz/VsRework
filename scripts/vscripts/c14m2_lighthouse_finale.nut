@@ -129,12 +129,6 @@ function SpawnScavengeCans()
 // number of cans needed to escape.
 NumCansNeeded <- 6
 
-// fewer cans in single player since bots don't help much
-if ( Director.IsSinglePlayerGame() )
-{
-	NumCansNeeded <- 6
-}
-
 switch( difficulty )
 {
 	case 0:
